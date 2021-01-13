@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Contador</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="contador-title">Contador</h1>
+      <p class="contador-txt">Informe uma data</p>
+      <form id="date-form">
+        <input type="datetime-local" name="date-input" id="date-input">
+      </form>
+      <a class="link" href="#" onclick="atualizarCont()" ><button class="btn">Iniciar contagem</button></a>
+    </div>
+    <p class="falt-txt">Faltam</p>
+    <div class="tempo-restante">
+      <p id="days" class="tempo" name="dias"></p>
+
+      <p id="hours" class="tempo" name="Horas"></p>
+
+      <p id="mins" class="tempo" name="Minutos"></p>
+
+      <p id="secs" class="tempo" name="Segundos"></p>
+    </div>
+    <div class="labels">
+      <label for="dias" class="label green">Dias</label>
+      <label for="Horas" class="label green">Horas</label>
+      <label for="Minutos" class="label green">Minutos</label>
+      <label for="Segundos" class="label green">Segundos</label>
+    </div>
+  </body>
+</html>
